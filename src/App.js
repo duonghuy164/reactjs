@@ -1,7 +1,12 @@
 import React from 'react';
 import Routes from "./routes";
+import {AuthProvider} from "./contexts/authContext";
 export default function App() {
   return (
-      <Routes></Routes>
+      <AuthProvider>
+
+        <Routes></Routes>
+
+      </AuthProvider>
   );
 }
